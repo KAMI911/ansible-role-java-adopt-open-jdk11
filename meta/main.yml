@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  role_name: java-open-jdk11
+  role_name: java-adopt-open-jdk11
   author: Kálmán Szalai - KAMI
-  description: "Ansible role for configuring Open JDK Java 11 or Server JRE with local installation support"
+  description: "Ansible role for configuring Adopt Open JDK Java 11 with local installation support"
   license: MIT
   min_ansible_version: 1.9
 
