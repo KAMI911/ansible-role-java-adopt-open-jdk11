@@ -15,6 +15,9 @@ before_install:
 install:
   - pip install 'molecule[docker]'
 
+env:
+  - MOLECULE_DEBUG=true
+
 script:
   - travis_wait 60 molecule test
 
