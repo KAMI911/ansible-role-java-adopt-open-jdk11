@@ -16,7 +16,7 @@ java_bins_update: true
 
 java_type: jdk
 
-# AdoptOpenJDK 11.0.5.10
+# AdoptOpenJDK 11.0.5.10 (LTS)
 java_version: 11
 java_update: 5
 java_build: '10'
@@ -30,6 +30,23 @@ java_build: '10'
 # java_version: 13
 # java_update: 1
 # java_build: '9'
+
+# Older versions
+
+# AdoptOpenJDK 8.0.232.09 (LTS)
+# java_version: 8
+# java_update: 232
+# java_build: '09'
+
+# AdoptOpenJDK 9.0.4.11
+# java_version: 9
+# java_update: 4
+# java_build: '11'
+
+# AdoptOpenJDK 10.0.2.13
+# java_version: 10
+# java_update: 2
+# java_build: '13'
 
 java_platform: x64_linux
 
