@@ -21,6 +21,16 @@ java_version: 11
 java_update: 5
 java_build: '10'
 
+# AdoptOpenJDK 12.0.2.10
+# java_version: 12
+# java_update: 2
+# java_build: '10'
+
+# AdoptOpenJDK 13.0.1.9
+# java_version: 13
+# java_update: 1
+# java_build: '9'
+
 java_platform: x64_linux
 
 java_usr_folder: /usr/java
