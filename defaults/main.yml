@@ -43,6 +43,11 @@ java_build: '10'
 
 # Older versions
 
+# AdoptOpenJDK 8.0.242.08 (LTS)
+# java_version: 8
+# java_update: 242
+# java_build: '08'
+
 # AdoptOpenJDK 8.0.232.09 (LTS)
 # java_version: 8
 # java_update: 232
