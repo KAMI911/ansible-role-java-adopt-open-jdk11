@@ -31,10 +31,10 @@ java_build: '10'
 # java_update: 5
 # java_build: '10'
 
-# AdoptOpenJDK 12.0.2.10
-# java_version: 12
-# java_update: 2
-# java_build: '10'
+# AdoptOpenJDK 14.0.1.7
+# java_version: 14
+# java_update: 1
+# java_build: '7'
 
 # AdoptOpenJDK 13.0.2.8
 # java_version: 13
@@ -46,7 +46,18 @@ java_build: '10'
 # java_update: 1
 # java_build: '9'
 
+# AdoptOpenJDK 12.0.2.10
+# java_version: 12
+# java_update: 2
+# java_build: '10'
+
+
 # Older versions
+
+# AdoptOpenJDK 8.0.252.09 (LTS)
+# java_version: 8
+# java_update: 252
+# java_build: '09'
 
 # AdoptOpenJDK 8.0.242.08 (LTS)
 # java_version: 8
