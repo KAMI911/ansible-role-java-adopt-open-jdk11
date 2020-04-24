@@ -16,10 +16,15 @@ java_bins_update: true
 
 java_type: jdk
 
-# AdoptOpenJDK 11.0.6.10 (LTS)
+# AdoptOpenJDK 11.0.7.10 (LTS)
 java_version: 11
-java_update: 6
+java_update: 7
 java_build: '10'
+
+# AdoptOpenJDK 11.0.6.10 (LTS)
+# java_version: 11
+# java_update: 6
+# java_build: '10'
 
 # AdoptOpenJDK 11.0.5.10 (LTS)
 # java_version: 11
