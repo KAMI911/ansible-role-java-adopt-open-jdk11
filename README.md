@@ -51,6 +51,10 @@ Install local (form Ansible host) JDK/Server JRE instead of downloading on targe
 
 Type of Java installer - JDK is: jdk, and Server JRE is: serverjre
 
+    java_engine: hotspot
+
+The name of Java engine. HotSpot is an an implementation of the JVM concept. Default is hotspot. Anpther setting is: openj9.
+
     java_version: 11
 
 Java major version.

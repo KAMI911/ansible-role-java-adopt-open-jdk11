@@ -15,11 +15,14 @@ java_bins_priority: 9
 java_bins_update: true
 
 java_type: jdk
+java_engine: hotspot # or openj9
 
 # AdoptOpenJDK 11.0.7.10 (LTS)
 java_version: 11
 java_update: 7
 java_build: '10'
+java_folder_name: {{ java_type }}
+java_oj9: '_openj9-0.20.0'
 
 # AdoptOpenJDK 11.0.6.10 (LTS)
 # java_version: 11
