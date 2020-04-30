@@ -1,6 +1,11 @@
 ---
 # tasks file for ansible-role-java-open-jdk11
 
+- name: setting fact
+  set_fact:
+    java_additional_part: '_{{ java_oj9 }}'
+  when: java_engine == 'openj9'
+
 - name: download Java installer
   include_tasks: download.yml
 
