@@ -21,7 +21,7 @@ java_engine: hotspot # or openj9
 java_version: 11
 java_update: 7
 java_build: '10'
-java_folder_name: {{ java_type }}
+java_folder_name: '{{ java_type }}'
 java_oj9: '_openj9-0.20.0'
 
 # AdoptOpenJDK 11.0.6.10 (LTS)
