@@ -1,7 +1,7 @@
 ---
 # vars file for ansible-role-java-open-jdk11
 java_download_filename: 'OpenJDK{{ java_version }}U-{{ java_type }}_{{ java_platform }}_{{ java_engine }}_{{ java_version }}.0.{{ java_update }}_{{ java_build }}{{ java_additional_part }}.tar.gz'
-java_download_url: '{{ java_download_base_url }}/openjdk{{ java_version }}-upstream-binaries/releases/download/{{ java_type }}-{{ java_version }}.0.{{ java_update }}%2B{{ java_build }}{{ java_additional_part }}/{{ java_download_filename }}'
+java_download_url: '{{ java_download_base_url }}/openjdk{{ java_version }}-binaries/releases/download/{{ java_type }}-{{ java_version }}.0.{{ java_update }}%2B{{ java_build }}{{ java_additional_part }}/{{ java_download_filename }}'
 java_folder: '{{ java_usr_folder }}/{{ java_folder_name }}-{{ java_version }}.0.{{ java_update }}+{{ java_build }}'
 java_archive: '{{ java_usr_folder }}/{{ java_download_filename }}'
 
