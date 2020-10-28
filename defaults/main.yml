@@ -19,11 +19,17 @@ java_engine: hotspot  # or openj9
 java_additional_part: ''
 java_folder_name: '{{ java_type }}'
 
-# AdoptOpenJDK 11.0.8.10 (LTS)
+# AdoptOpenJDK 11.0.9.11 (LTS)
 java_version: 11
-java_update: 8
-java_build: '10'
-java_oj9: 'openj9-0.21.0'
+java_update: 9
+java_build: '11'
+java_oj9: 'openj9-0.23.0'
+
+# AdoptOpenJDK 11.0.8.10 (LTS)
+# java_version: 11
+# java_update: 8
+# java_build: '10'
+# java_oj9: 'openj9-0.21.0'
 
 # AdoptOpenJDK 11.0.7.10 (LTS)
 # java_version: 11
