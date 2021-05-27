@@ -33,7 +33,17 @@
     owner: root
     group: root
 
-- name: 'link Java DK binaries'
+- name: 'create link for Java DK binaries if not existing'
+  become: true
+  shell: 'update-alternatives --install /usr/bin/{{ item }} {{ item }} {{ java_folder }}/bin/{{ item }} {{ java_bins_priority }}'
+  creates: '/usr/bin/{{ item }}'
+  with_items: "{{ java_bins_jdk }}"
+  ignore_errors: yes
+  when:
+    - java_bins_update
+    - java_type == 'jdk'
+
+- name: 'update link for Java DK binaries'
   become: true
   alternatives: link="/usr/bin/{{ item }}" name="{{ item }}" path="{{ java_folder }}/bin/{{ item }}" priority={{ java_bins_priority }}
   with_items: "{{ java_bins_jdk }}"
@@ -42,7 +52,17 @@
     - java_bins_update
     - java_type == 'jdk'
 
-- name: 'link Java Server RE binaries'
+- name: 'create link for Java Server RE binaries if not existing'
+  become: true
+  shell: 'update-alternatives --install /usr/bin/{{ item }} {{ item }} {{ java_folder }}/bin/{{ item }} {{ java_bins_priority }}'
+  creates: '/usr/bin/{{ item }}'
+  with_items: "{{ java_bins_server_jre }}"
+  ignore_errors: yes
+  when:
+    - java_bins_update
+    - java_type == 'server_jre'
+
+- name: 'update link for Java Server RE binaries'
   become: true
   alternatives: link="/usr/bin/{{ item }}" name="{{ item }}" path="{{ java_folder }}/bin/{{ item }}" priority={{ java_bins_priority }}
   with_items: "{{ java_bins_server_jre }}"
