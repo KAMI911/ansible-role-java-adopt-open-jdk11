@@ -35,7 +35,8 @@
 
 - name: 'create link for Java DK binaries if not existing'
   become: true
-  shell: 'update-alternatives --install /usr/bin/{{ item }} {{ item }} {{ java_folder }}/bin/{{ item }} {{ java_bins_priority }}'
+  shell:
+    cmd: 'update-alternatives --install /usr/bin/{{ item }} {{ item }} {{ java_folder }}/bin/{{ item }} {{ java_bins_priority }}'
     creates: '/usr/bin/{{ item }}'
   with_items: "{{ java_bins_jdk }}"
   ignore_errors: yes
@@ -54,7 +55,8 @@
 
 - name: 'create link for Java Server RE binaries if not existing'
   become: true
-  shell: 'update-alternatives --install /usr/bin/{{ item }} {{ item }} {{ java_folder }}/bin/{{ item }} {{ java_bins_priority }}'
+  shell:
+    cmd: 'update-alternatives --install /usr/bin/{{ item }} {{ item }} {{ java_folder }}/bin/{{ item }} {{ java_bins_priority }}'
     creates: '/usr/bin/{{ item }}'
   with_items: "{{ java_bins_server_jre }}"
   ignore_errors: yes
