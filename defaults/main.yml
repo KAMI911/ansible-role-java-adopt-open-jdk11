@@ -24,54 +24,74 @@ java_version: 11
 java_update: 12
 java_build: '7'
 java_oj9: 'openj9-0.27.0'
+java_download_base_url: https://github.com/adoptium/
+java_binary_name: temurin
 
 # AdoptOpenJDK 11.0.9.11 (LTS)
-#java_version: 11
-#java_update: 9
-#java_build: '11'
-#java_oj9: 'openj9-0.23.0'
+# java_version: 11
+# java_update: 9
+# java_build: '11'
+# java_oj9: 'openj9-0.23.0'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 11.0.8.10 (LTS)
 # java_version: 11
 # java_update: 8
 # java_build: '10'
 # java_oj9: 'openj9-0.21.0'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 11.0.7.10 (LTS)
 # java_version: 11
 # java_update: 7
 # java_build: '10'
 # java_oj9: 'openj9-0.20.0'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 11.0.6.10 (LTS)
 # java_version: 11
 # java_update: 6
 # java_build: '10'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 11.0.5.10 (LTS)
 # java_version: 11
 # java_update: 5
 # java_build: '10'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 14.0.1.7
 # java_version: 14
 # java_update: 1
 # java_build: '7'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 13.0.2.8
 # java_version: 13
 # java_update: 2
 # java_build: '8'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 13.0.1.9
 # java_version: 13
 # java_update: 1
 # java_build: '9'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 12.0.2.10
 # java_version: 12
 # java_update: 2
 # java_build: '10'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 
 # Older versions
@@ -80,30 +100,38 @@ java_oj9: 'openj9-0.27.0'
 # java_version: 8
 # java_update: 252
 # java_build: '09'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 8.0.242.08 (LTS)
 # java_version: 8
 # java_update: 242
 # java_build: '08'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 8.0.232.09 (LTS)
 # java_version: 8
 # java_update: 232
 # java_build: '09'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 9.0.4.11
 # java_version: 9
 # java_update: 4
 # java_build: '11'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 # AdoptOpenJDK 10.0.2.13
 # java_version: 10
 # java_update: 2
 # java_build: '13'
+# java_download_base_url: https://github.com/AdoptOpenJDK
+# java_binary_name: openjdk
 
 java_platform: x64_linux
 
 java_usr_folder: /usr/java
 java_latest_folder: /usr/java/latest
-
-java_download_base_url: https://github.com/AdoptOpenJDK
