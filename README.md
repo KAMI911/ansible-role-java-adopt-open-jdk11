@@ -91,6 +91,10 @@ Where to link the latest folder.
 
 Download link of Java installers.
 
+#### Additional Java parameters
+
+[Check Java parameters by versions.](https://chriswhocodes.com/vm-options-explorer.html)
+
 ## Dependencies
 
 None.
