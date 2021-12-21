@@ -34,7 +34,7 @@ java_checksum: 3b1c0c34be4c894e64135a454f2d5aaa4bd10aea04ec2fa0c0efe6bb26528e30
 # java_build: '12'
 # java_oj9: 'openj9-0.27.0'
 # java_download_base_url: https://github.com/adoptium/
-# java_binary_name: temurin17
+# java_binary_name: temurin
 # java_checksum: 6ea18c276dcbb8522feeebcfc3a4b5cb7c7e7368ba8590d3326c6c3efc5448b6
 
 # AdoptOpenJDK 11.0.12.7 (LTS)
