@@ -19,14 +19,32 @@ java_engine: hotspot  # or openj9
 java_additional_part: ''
 java_folder_name: '{{ java_type }}'
 
-# AdoptOpenJDK 11.0.14.1.1 (LTS)
+# AdoptOpenJDK 11.0.15.10 (LTS)
 java_version: 11
-java_update: '14.1'
-java_build: '1'
+java_update: 15
+java_build: '10'
 java_oj9: 'openj9-0.27.0'
 java_download_base_url: https://github.com/adoptium/
 java_binary_name: temurin
-java_checksum: 43fb84f8063ad9bf6b6d694a67b8f64c8827552b920ec5ce794dfe5602edffe7
+java_checksum: 5fdb4d5a1662f0cca73fec30f99e67662350b1fa61460fa72e91eb9f66b54d0b
+
+# AdoptOpenJDK 17.0.3.7 (LTS)
+# java_version: 17
+# java_update: 3
+# java_build: '7'
+# java_oj9: 'openj9-0.27.0'
+# java_download_base_url: https://github.com/adoptium/
+# java_binary_name: temurin
+# java_checksum: 81f5bed21077f9fbb04909b50391620c78b9a3c376593c0992934719c0de6b73
+
+# AdoptOpenJDK 11.0.14.1.1 (LTS)
+# java_version: 11
+# java_update: '14.1'
+# java_build: '1'
+# java_oj9: 'openj9-0.27.0'
+# java_download_base_url: https://github.com/adoptium/
+# java_binary_name: temurin
+# java_checksum: 43fb84f8063ad9bf6b6d694a67b8f64c8827552b920ec5ce794dfe5602edffe7
 
 # AdoptOpenJDK 17.0.2.8 (LTS)
 # java_version: 17
