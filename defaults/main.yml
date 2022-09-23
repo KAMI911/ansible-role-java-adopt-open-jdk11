@@ -21,7 +21,7 @@ java_folder_name: '{{ java_type }}'
 
 # AdoptOpenJDK 11.0.16.1 (LTS)
 java_version: 11
-java_update: 16
+java_update: '16.1'
 java_build: '1'
 java_oj9: 'openj9-0.27.0'
 java_download_base_url: https://github.com/adoptium/
