@@ -19,6 +19,9 @@ java_engine: hotspot  # or openj9
 java_additional_part: ''
 java_folder_name: '{{ java_type }}'
 
+java_root_user: root
+java_root_group: root
+
 # AdoptOpenJDK 11.0.16.1 (LTS)
 java_version: 11
 java_update: '16.1'

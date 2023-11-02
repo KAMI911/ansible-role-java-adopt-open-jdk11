@@ -10,8 +10,8 @@
     path: '{{ java_usr_folder }}'
     state: directory
     mode: 0755
-    owner: root
-    group: root
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
   when: not java_installed.stat.exists or force_java_install
 
 - name: creating directory
@@ -19,8 +19,8 @@
     path: '{{ java_folder }}'
     state: directory
     mode: 0775
-    owner: root
-    group: root
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
   when: not java_installed.stat.exists or force_java_install
 
 - name: is already downloaded locally
@@ -52,6 +52,8 @@
       copy:
         src: '{{ java_download_filename }}'
         dest: '{{ java_archive }}'
+        owner: '{{ java_root_user }}'
+        group: '{{ java_root_group }}'
         mode: 0644
       when: ( not java_is_download_file.stat.exists or java_installer_force_overwrite ) and java_installer_local
   when: java_installer_local
@@ -61,6 +63,8 @@
     url: '{{ java_download_url }}'
     validate_certs: false
     dest: '{{ java_archive }}'
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
     mode: 0644
     checksum: 'sha256:{{ java_checksum }}'
   when: ( not java_is_download_file.stat.exists or java_installer_force_overwrite ) and java_installer_force_download and not java_installer_local
@@ -69,8 +73,8 @@
   unarchive:
     src: '{{ java_archive }}'
     dest: '{{ java_usr_folder }}'
-    owner: root
-    group: root
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
     copy: false
   when: not java_installed.stat.exists or force_java_install
 

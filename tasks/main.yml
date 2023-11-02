@@ -6,6 +6,30 @@
     java_additional_part: '_{{ java_oj9 }}'
   when: java_engine == 'openj9'
 
+- name: create application administration group
+  group:
+    name: '{{ java_root_group }}'
+    system: true
+    state: present
+  when:
+   - java_root_group is defined
+   - java_root_group != "root"
+   - java_root_user is defined
+   - java_root_user != "root"
+
+- name: create application administration user
+  user:
+    name: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
+    createhome: false
+    state: present
+    system: true
+  when:
+   - java_root_group is defined
+   - java_root_group != "root"
+   - java_root_user is defined
+   - java_root_user != "root"
+
 - name: download Java installer
   include_tasks: download.yml
 
@@ -13,8 +37,8 @@
   copy:
     src: 'cacerts'
     dest: '{{ java_security_folder }}/cacerts'
-    owner: root
-    group: root
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
     backup: true
     force: true
 
@@ -22,16 +46,16 @@
   file:
     src: '{{ java_folder }}'
     dest: '{{ java_latest_folder }}'
-    owner: root
-    group: root
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
     state: link
 
 - name: 'install Java environment variables'
   template:
     src: 'java.sh.j2'
     dest: '/etc/profile.d/java.sh'
-    owner: root
-    group: root
+    owner: '{{ java_root_user }}'
+    group: '{{ java_root_group }}'
 
 - name: 'create link for Java DK binaries if not existing'
   become: true
