@@ -22,14 +22,32 @@ java_folder_name: '{{ java_type }}'
 java_root_user: root
 java_root_group: root
 
-# AdoptOpenJDK 11.0.16.1 (LTS)
+# AdoptOpenJDK 11.0.21.9 (LTS)
 java_version: 11
-java_update: '16.1'
-java_build: '1'
+java_update: '21'
+java_build: '9'
 java_oj9: 'openj9-0.27.0'
 java_download_base_url: https://github.com/adoptium/
 java_binary_name: temurin
-java_checksum: 5f6b513757d386352cf91514ed5859d1ab59364b4453e1f1c57152ba2039b8e2
+java_checksum: 60ea98daa09834fdd3162ca91ddc8d92a155ab3121204f6f643176ee0c2d0d5e
+
+# AdoptOpenJDK 11.0.20.1 (LTS)
+# java_version: 11
+# java_update: '20'
+# java_build: '1'
+# java_oj9: 'openj9-0.27.0'
+# java_download_base_url: https://github.com/adoptium/
+# java_binary_name: temurin
+# java_checksum: 398a64bff002f0e3b0c01ecd24a1a32c83cb72a5255344219e9757d4ddd9f857
+
+# AdoptOpenJDK 11.0.16.1 (LTS)
+# java_version: 11
+# java_update: '16.1'
+# java_build: '1'
+# java_oj9: 'openj9-0.27.0'
+# java_download_base_url: https://github.com/adoptium/
+# java_binary_name: temurin
+# java_checksum: 5f6b513757d386352cf91514ed5859d1ab59364b4453e1f1c57152ba2039b8e2
 
 # AdoptOpenJDK 17.0.4.1 (LTS)
 # java_version: 17
